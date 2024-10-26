@@ -1,0 +1,152 @@
+:root {
+    --orange-color: #da722c;
+    --dark-blue-color: #023047;
+    --dark-color: #070917;
+    --light-color: #6fd;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .wrapperr {
+    max-width: 1134px;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    padding: 16px 32px;
+    color: #ffffff;
+    border-radius: 24px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  
+  .btn.dark {
+    background: var(--dark-blue-color);
+  }
+  
+  .btn.light {
+    background: var(--orange-color);
+  }
+  
+  .btn.enroll-icon {
+    padding-left: 60px;
+    position: relative;
+  }
+  
+  .btn.enroll-icon::before { 
+    content: url("/images/PencilAlt.svg");
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translateY(-50%);
+  } 
+  
+  header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #6f7dfb, #26308c);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    max-width: 1134px;
+    top: 35px;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  nav .logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /* hero section */
+  
+  .hero-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    padding-top: 60px;
+    position: relative;
+  }
+  
+  .hero-section .left {
+    width: 457px;
+  }
+  
+  .hero-section .left h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 125%;
+    margin-bottom: 0;
+  }
+  
+  .hero-section .left p {
+    font-size: 16px;
+    line-height: 2;
+    color: #fff;
+  }
+  
+  .hero-section .right {
+    align-self: flex-end;
+  }
+  
+  .hero-section .right img {
+    height: 520px;
+    display: block;
+  }
+  
+  .achievement-cards {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  .achievement-card .content {
+    border-radius: 24px;
+    background-color: #fff;
+    padding: 8px 32px;
+  }
+  
+  .achievement-card.enrolled {
+    position: absolute;
+    left: 47%;
+    top: 330px;
+  }
